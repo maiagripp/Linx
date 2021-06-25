@@ -1,0 +1,56 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  background-color: #707070;
+  height: 400px;
+}
+
+.banner {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.banner > h2,
+h1,
+p {
+  color: #fff;
+  position: relative;
+}
+
+.banner > h2 {
+  font-size: 20px;
+  top: 69px;
+}
+
+.banner > h1 {
+  font-size: 40px;
+  font-weight: bold;
+  top: 92px;
+}
+
+.banner > p {
+  font-size: 14px;
+  top: 164px;
+  line-height: 16px;
+}
+
+.button-group {
+  position: relative;
+  top: 230px;
+}
+
+.btn-banner {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  width: 160px;
+  height: 40px;
+  color: #888888;
+  box-shadow: 0px 1px 6px #00000029;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 1;
+  margin-left: 40px;
+}
