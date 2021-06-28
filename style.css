@@ -1,6 +1,7 @@
 /* General configutarions */
 body {
   font-family: 'Inter', sans-serif;
+  color: #888888;
 }
 
 .container {
@@ -42,13 +43,42 @@ label {
   margin-bottom: 20px;
 }
 
+h3 {
+  width: 80%;
+  margin: 0.7em auto;
+  overflow: hidden;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 100px;
+  font-size: 18px;
+}
+
+h3:before,
+h3:after {
+  content: '';
+  display: inline-block;
+  width: 50%;
+  margin: 0 0.5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid #888888;
+}
+
+h3:after {
+  margin: 0 -55% 0 0.5em;
+}
+
 /* Header */
 
 .header {
   background-color: #707070;
-  height: 450px;
+  width: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  position: absolute;
+  height: 450px;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .banner {
@@ -56,35 +86,37 @@ label {
   text-align: center;
   flex-direction: column;
   flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-.banner > h2,
+.banner h2,
 h1,
 p {
   color: #fff;
-  position: relative;
 }
 
-.banner > h2 {
+.banner h2 {
   font-size: 20px;
-  top: 69px;
+  margin-top: 70px;
 }
 
-.banner > h1 {
+.banner h1 {
   font-size: 40px;
   font-weight: bold;
-  top: 92px;
+  margin-top: 20px;
 }
 
-.banner > p {
+.banner p {
   font-size: 16px;
-  top: 150px;
+  margin-top: 30px;
   line-height: 16px;
 }
 
 .button-group {
-  position: relative;
-  top: 200px;
+  margin-top: 40px;
 }
 
 .btn-banner {
@@ -100,7 +132,9 @@ p {
 }
 
 /* Main */
-
+main {
+  margin-top: 450px;
+}
 #col-6 {
   float: left;
   width: 45%;
@@ -110,6 +144,7 @@ p {
 
 article > h2 {
   padding-bottom: 20px;
+  margin: 10px;
   color: #888888;
 }
 
@@ -136,31 +171,6 @@ article > h2 {
   padding-bottom: 10px;
 }
 
-h3 {
-  width: 80%;
-  margin: 0.7em auto;
-  overflow: hidden;
-  text-align: center;
-  color: #888888;
-  font-weight: bold;
-  padding-top: 100px;
-  font-size: 18px;
-}
-
-h3:before,
-h3:after {
-  content: '';
-  display: inline-block;
-  width: 50%;
-  margin: 0 0.5em 0 -55%;
-  vertical-align: middle;
-  border-bottom: 1px solid #888888;
-}
-
-h3:after {
-  margin: 0 -55% 0 0.5em;
-}
-
 section > p {
   text-align: center;
   margin-top: 40px;
@@ -173,6 +183,48 @@ section > p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+#card-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 20%;
+  margin: 10px 10px;
+}
+
+.card-header img {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #707070;
+}
+
+.card-body h4 {
+  text-align: left;
+  line-height: 16px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.card-text {
+  color: #888888;
+  text-align: left;
+  line-height: 16px;
+  padding-top: 10px;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#btn-card {
+  width: 200px;
+  margin-top: 10px;
 }
 
 /* Footer */
@@ -195,4 +247,89 @@ section > p {
 
 .footer > p:first-child {
   padding-top: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  #col-6 {
+    float: none;
+    width: 100%;
+    padding-top: 60px;
+    padding-left: 0;
+  }
+
+  #col-4 {
+    float: none;
+    width: 100%;
+    padding-top: 60px;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  body {
+    width: 99%;
+  }
+
+  h3 {
+    padding: 30px;
+  }
+
+  .banner h1,
+  h2,
+  p {
+    text-align: left;
+    margin: 5px;
+  }
+
+  .btn-banner {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .button-group {
+    margin-top: 100px;
+  }
+
+  .article-text {
+    margin: 10px;
+  }
+
+  .card {
+    width: 100%;
+    display: inline-flex;
+  }
+
+  .card-header,
+  .card-body {
+    width: 40%;
+    margin: 0;
+  }
+
+  .card-body {
+    margin-left: 5%;
+  }
+
+  .card-text {
+    line-height: 12px;
+  }
+
+  .card-header img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hide-xs {
+    display: none;
+  }
+
+  #form-indication {
+    flex-direction: column;
+  }
 }
