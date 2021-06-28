@@ -146,9 +146,8 @@ main {
   padding-left: 100px;
 }
 
-article > h2 {
+article h2 {
   padding-bottom: 20px;
-  margin: 10px;
   color: #888888;
 }
 
@@ -257,6 +256,14 @@ strong {
 @media only screen and (max-width: 768px) {
   .container {
     width: 90%;
+  }
+
+  .banner {
+    left: 0;
+  }
+
+  .card {
+    width: 40%;
   }
 
   #col-6 {
