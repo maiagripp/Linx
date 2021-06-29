@@ -7,6 +7,7 @@ body {
 .container {
   width: 991px;
   margin: 0 auto;
+  position: relative;
 }
 
 .form-control {
@@ -92,7 +93,9 @@ header {
 .banner {
   position: absolute;
   top: 0;
-  left: 20%;
+  left: 0;
+  width: 100%;
+  /*left: 20%;*/
   z-index: 1;
 }
 
@@ -252,6 +255,13 @@ strong {
 .footer > p:first-child {
   padding-top: 120px;
 }
+/*
+@media only screen and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+}
+*/
 
 @media only screen and (max-width: 768px) {
   .container {
@@ -285,19 +295,17 @@ strong {
 }
 
 @media only screen and (max-width: 420px) {
-  body {
-    width: 99%;
-  }
-
   h3 {
     padding: 30px;
   }
+  .banner {
+    padding: 10px;
+  }
 
   .banner h1,
-  h2,
-  p {
+  .banner h2,
+  .banner p {
     text-align: left;
-    margin: 5px;
   }
 
   .btn-banner {
@@ -306,7 +314,7 @@ strong {
   }
 
   .button-group {
-    margin-top: 100px;
+    margin-top: 40px;
   }
 
   .article-text {
@@ -316,6 +324,7 @@ strong {
   .card {
     width: 100%;
     display: inline-flex;
+    border: none;
   }
 
   .card-header,
@@ -324,8 +333,14 @@ strong {
     margin: 0;
   }
 
+  .card-header {
+    width: 40%;
+  }
+
   .card-body {
     margin-left: 5%;
+
+    width: 55%;
   }
 
   .card-text {
@@ -333,7 +348,7 @@ strong {
   }
 
   .card-header img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 
