@@ -2,6 +2,8 @@
 body {
   font-family: 'Inter', sans-serif;
   color: #888888;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .btn-common {
@@ -46,12 +48,14 @@ header {
   left: 0;
   width: 100%;
   z-index: 1;
+  padding: 0;
 }
 
 .banner h2,
 h1,
 p {
   color: #fff;
+  padding-left: 15px;
 }
 
 .banner h2 {
@@ -72,6 +76,10 @@ p {
 }
 
 /* Main */
+
+article h2 {
+  padding-left: 15px;
+}
 
 .article-text {
   color: #888888;

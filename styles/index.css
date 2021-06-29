@@ -73,6 +73,7 @@ h3:after {
 main {
   margin-top: 450px;
 }
+
 #col-6 {
   float: left;
   width: 45%;
@@ -117,16 +118,16 @@ section > p {
 }
 
 /* Responsive configurations */
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .container {
-    width: 90%;
+    width: 100%;
   }
-
-  .banner {
-    left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 450px;
+    width: 100%;
   }
-
   #col-6 {
     float: none;
     width: 100%;
@@ -190,5 +191,8 @@ section > p {
 
   #form-indication {
     flex-direction: column;
+  }
+  .card .btn-common {
+    width: 200px;
   }
 }

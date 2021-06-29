@@ -20,3 +20,7 @@ article h2 {
 main {
   margin-top: 300px;
 }
+
+.card-group {
+  justify-content: space-between;
+}
