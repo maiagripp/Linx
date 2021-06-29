@@ -10,3 +10,6 @@ E um layout de email-marketing.
 
 O projeto consome uma API para exibir os produtos.
 Ao clique do botão, o grid de produtos exibe a segunda página da API.
+
+Live-preview do projeto:
+https://maiagripp.github.io/linx/
