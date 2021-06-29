@@ -1,0 +1,146 @@
+/* General configutarions */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #888888;
+}
+
+.btn-common {
+  border: 1px solid #707070;
+  border-radius: 4px;
+  background-color: #ffffff;
+  width: 345px;
+  height: 39px;
+  color: #888888;
+}
+
+.btn-center {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.header {
+  background-color: #707070;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.banner h2,
+h1,
+p {
+  color: #fff;
+}
+
+.banner h2 {
+  font-size: 20px;
+  margin-top: 70px;
+}
+
+.banner h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.banner p {
+  font-size: 16px;
+  margin-top: 30px;
+  line-height: 16px;
+}
+
+/* Main */
+
+.article-text {
+  color: #888888;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.card-group {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  margin: 10px 10px;
+}
+
+.card-header img {
+  width: 200px;
+  height: 150px;
+  border: 1px solid #707070;
+}
+
+.card-body h4 {
+  text-align: left;
+  line-height: 16px;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.card-text {
+  color: #888888;
+  text-align: left;
+  line-height: 16px;
+  padding-top: 10px;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#btn-card {
+  width: 200px;
+  margin-top: 10px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #707070;
+  width: 100%;
+  height: 200px;
+  -webkit-clip-path: polygon(0 26%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 26%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.footer > p {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.footer > p:first-child {
+  padding-top: 120px;
+}
